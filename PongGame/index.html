@@ -35,9 +35,9 @@
         var paddleX = (canvas.width - paddleWidth)/2;
         
         // Starting postion of the ball we will draw on the canvas
-        var x = canvas.width/2
-        var y = canvas.height-30
-        var ballRadius = 10
+        var x = canvas.width/2;
+        var y = canvas.height-30;
+        var ballRadius = 10;
 
         // Key press values to control the paddle
         var rightPressed = false;
@@ -67,7 +67,7 @@
         function draw(){
             ctx.clearRect(0, 0, canvas.width, canvas.height);//Clear the canvas not to leave trails
             drawBall();
-            drawPaddle()
+            drawPaddle();
             x += dx; //Changing the x coordinate of the ball by dx
             y += dy; //Changing the y coordinate of the ball by dy
             
@@ -83,8 +83,7 @@
                     dy = -dy;
                     }
                 else {
-                        alert('Game Over!');
-                        document.location.reload(); 
+                        document.location.reload();
                     }
             }
 
