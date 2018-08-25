@@ -25,11 +25,11 @@
     <script>
     // Javascript code
 
-    // Assigning canvas to canvas variable and create our ctx canvas 2d object to work with
+        // Assigning canvas to canvas variable and create our ctx canvas 2d object to work with
         var canvas = document.getElementById('myCanvas')
         var ctx = canvas.getContext('2d')
 
-    // Paddles attributes
+        // Paddles attributes
         var paddleHeight = 10;
         var paddleWidth = 75;
         var paddleX = (canvas.width - paddleWidth)/2;
@@ -43,9 +43,18 @@
         var rightPressed = false;
         var leftPressed = false;
 
-        //Change magnitudes in the position of the ball
+        // Change magnitudes in the position of the ball
         var dx = 2
         var dy = -2
+
+        // Bricks attributes
+        var brickRowCount = 3;
+        var brickColumnCount = 5;
+        var brickWidth = 75;
+        var brickHeight = 20;
+        var brickPadding = 10;
+        var brickOffsetTop = 30;
+        var brickOffsetLeft = 30;
 
         // Defining the function to draw the ball
         function drawBall(){
